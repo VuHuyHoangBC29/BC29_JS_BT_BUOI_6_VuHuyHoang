@@ -47,19 +47,11 @@ getEle("btnBai4").onclick = function () {
     for (l = 1; l <= 10; l++) {
         // content += "<div class=divNho style = height:30px></div>";
         if (l % 2 === 0) {
-            content += "<div class=divNho style = height:30px></div>";
-            divNho.style.backgroundColor = 'yellow';
+            content += "<div class=divNho style = background-color:blue;color:white>Div chẵn: " + l + "</div>";
 
         } else if (l % 2 !== 0) {
-            content += "<div class=divNho style = height:30px></div>";
-            divNho.style.backgroundColor = 'red';
+            content += "<div class=divNho style = background-color:red;color:white>Div lẻ: " + l + "</div>";
         }
     }
-    // if (l % 2 === 0) {
-    //     divNho.style.backgroundColor = 'yellow';
-
-    // } else if (l % 2 !== 0) {
-    //     divNho.style.backgroundColor = 'red';
-    // }
     getEle("taoDiv").innerHTML = content;
 }
